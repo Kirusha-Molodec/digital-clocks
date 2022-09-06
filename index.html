@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-EN">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title>Digital Clock</title>
+    <style>
+    
+        @font-face{
+            font-family: "Digital Bold";
+            src: url("/static/fonts/Digital-Bold.ttf");
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+        <div class="row">
+            <div class="col col_preview">
+                <div class="flexCol_main-content">
+                    <p class="p_time-remain">Time</p>
+                    <div class="event-date-widget">
+                        <div class="event-date-widget__wrapper">
+                           
+                            <div class="event-date-widget__date event-date-widget__date_hours">
+                                <div class="event-date-widget__num">
+                                   <p id="hours"></p>
+                                </div>
+                                <div class="event-date-widget__num">
+                                    <p id="hoursSec"></p>
+                                </div>
+                            </div>
+                            <p>:</p>
+                            <div class="event-date-widget__date event-date-widget__date_minutes">
+                                <div class="event-date-widget__num">
+                                    <p id="minutes"></p>
+                                </div>
+                                <div class="event-date-widget__num">
+                                    <p id="minutesSec"></p>
+                                </div>
+                            </div>
+                            <p>:</p>
+                            <div class="event-date-widget__date event-date-widget__date_seconds">
+                                <div class="event-date-widget__num">
+                                    <p id="seconds"></p>
+                                </div>
+                                <div class="event-date-widget__num">
+                                    <p id="secondsSec"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script src="/static/js/countdown.js"></script>
+<script src="/static/js/main.js"></script>
+<script src="/static/js/libs.min.js"></script>
+
+</body>
+</html>
